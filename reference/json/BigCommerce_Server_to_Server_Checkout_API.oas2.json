@@ -3,7 +3,12 @@
   "info": {
     "version": "",
     "title": "Server to Server Checkout API",
-    "description": "### Checkout\nAllows for a checkout to be created from an existing cart using BigCommerce checkout logic. The existing BigCommerce front end cart/checkout can be bypassed.\n\nNotes:\n- checkoutId is the same as the cartId."
+    "description": "### Checkout\nAllows for a checkout to be created from an existing cart using BigCommerce checkout logic. The existing BigCommerce front end cart/checkout can be bypassed.\n\nNotes:\n- checkoutId is the same as the cartId.",
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com",
+      "name": "BigCommerce"
+    }
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v3",
@@ -612,9 +617,6 @@
             "type": "string",
             "description": "Must be included to get available shipping options",
             "default": "consignments.available_shipping_options"
-          },
-          {
-            "$ref": "#/parameters/includeShippingOption"
           }
         ],
         "responses": {

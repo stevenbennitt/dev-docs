@@ -1,5 +1,5 @@
 {
-  "swagger": "2.0",
+  "swagger": "3.0",
   "info": {
     "version": "",
     "title": "Orders",
@@ -935,6 +935,38 @@
           }
         ]
       },
+      "delete": {
+        "description": "Deletes a shipment associated with an order.",
+        "summary": "Delete A Order Shipment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/Accept"
+          },
+          {
+            "$ref": "#/parameters/Content-Type"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Order Shipments"
+        ],
+        "operationId": "deleteOrderShipment"
+      },
+      "parameters": [
+        {
+          "$ref": "#/parameters/order_id"
+        },
+        {
+          "$ref": "#/parameters/shipment_id"
+        }
+      ],
       "put": {
         "description": "Updates an existing shipment associated with an order.",
         "summary": "Update A Shipment",
@@ -1408,39 +1440,7 @@
           "Order Shipments"
         ],
         "operationId": "updateOrderShipment"
-      },
-      "delete": {
-        "description": "Deletes a shipment associated with an order.",
-        "summary": "Delete A Order Shipment",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/Accept"
-          },
-          {
-            "$ref": "#/parameters/Content-Type"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": ""
-          }
-        },
-        "tags": [
-          "Order Shipments"
-        ],
-        "operationId": "deleteOrderShipment"
-      },
-      "parameters": [
-        {
-          "$ref": "#/parameters/order_id"
-        },
-        {
-          "$ref": "#/parameters/shipment_id"
-        }
-      ]
+      }
     },
     "/orders/{order_id}/messages": {
       "get": {
@@ -5493,7 +5493,8 @@
           ],
           "count": 133
         }
-      }
+      },
+      "description": "Order Count Response Collection"
     },
     "OrderResponse": {
       "description": "Multiple Items -- An order that contains mulitple products. The store it set to display prices excluding taxes. The tax rate is 8.95%.",

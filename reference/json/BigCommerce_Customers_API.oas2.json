@@ -3,7 +3,8 @@
   "info": {
     "version": "",
     "title": "Customers API",
-    "description": "To learn more about Customers see [here](/api-docs/customers/customers-subscribers-overview). \n### Customers\nIdentity and account details for customers shopping on BigCommerce stores.\n\n### Customer Addresses\nPostal address belonging to a customer.\n\n### Customer Groups\nGroupings of customers who share the same level of access and discounts at a store."
+    "description": "To learn more about Customers see [here](/api-docs/customers/customers-subscribers-overview). \n### Customers\nIdentity and account details for customers shopping on BigCommerce stores.\n\n### Customer Addresses\nPostal address belonging to a customer.\n\n### Customer Groups\nGroupings of customers who share the same level of access and discounts at a store.",
+    "contact": {}
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v2",

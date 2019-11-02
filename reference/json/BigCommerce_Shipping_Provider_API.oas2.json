@@ -4,7 +4,12 @@
     "version": "",
     "title": "Shipping Provider API",
     "description": "## Shipping Provider API\n\nThe Shipping Provider API allows developers to create custom shipping providers to either create an app in the [Marketplace](https://www.bigcommerce.com/apps/) or create custom shipping for a merchant as a [private app](/api-docs/getting-started/building-apps-bigcommerce/types-of-apps#types-of-apps_unlisted-marketplace-apps).\n\nTo learn more, see [Shipping Provider API Overview](/api-docs/store-management/shipping/shipping-provider-api).",
-    "termsOfService": "https://www.bigcommerce.com/terms/api-terms/"
+    "termsOfService": "https://www.bigcommerce.com/terms/api-terms/",
+    "contact": {
+      "name": "BigCommerce",
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com"
+    }
   },
   "schemes": [
     "http"

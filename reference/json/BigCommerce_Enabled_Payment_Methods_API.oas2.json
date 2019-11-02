@@ -7,6 +7,11 @@
     "termsOfService": "",
     "license": {
       "name": ""
+    },
+    "contact": {
+      "email": "devdocs@bigcommerce.com",
+      "url": "https://developer.bigcommerce.com",
+      "name": "BigCommerce"
     }
   },
   "host": "api.bigcommerce.com",
@@ -155,7 +160,8 @@
         },
         "tags": [
           "Payment Methods"
-        ]
+        ],
+        "operationId": "getAllPaymentMethods"
       }
     }
   },

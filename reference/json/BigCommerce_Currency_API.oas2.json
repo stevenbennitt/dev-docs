@@ -3,7 +3,12 @@
   "info": {
     "version": "",
     "title": "Currencies",
-    "description": "### Currencies\n`/currencies` endpoints manage alternate currency display options on the storefront.\n\n**OAuth Scopes**\n* `Information & Settings`"
+    "description": "### Currencies\n`/currencies` endpoints manage alternate currency display options on the storefront.\n\n**OAuth Scopes**\n* `Information & Settings`",
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "name": "BigCommerce",
+      "email": "devdocs@bigcommerce.com"
+    }
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v2/",
@@ -78,14 +83,15 @@
                   "decimal_places": 2,
                   "enabled": false
                 }
-              ],
-              "example-2": {}
+              ]
             }
           }
         },
-        "summary": "Get All Store Currency",
+        "summary": "Get All Store Currencies",
         "description": "Returns a list of all store *Currency*.",
-        "tags": ["/currencies"],
+        "tags": [
+          "/currencies"
+        ],
         "produces": [
           "application/json"
         ],
@@ -104,7 +110,8 @@
             "default": "application/json",
             "required": true
           }
-        ]
+        ],
+        "operationId": "getAllStoreCurrencies"
       },
       "delete": {
         "responses": {
@@ -133,8 +140,11 @@
             "required": true
           }
         ],
-        "tags": ["/currencies"],
-        "description": "Deletes all non-default store currencies."
+        "tags": [
+          "/currencies"
+        ],
+        "description": "Deletes all non-default store currencies.",
+        "operationId": "deleteAllStoreCurrencies"
       },
       "post": {
         "responses": {
@@ -194,30 +204,12 @@
             "type": "string",
             "default": "application/json",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Currency"
-            },
-            "x-examples": {
-              "Example": {
-                "country_iso2": "AU",
-                "currency_code": "AUD",
-                "currency_exchange_rate": "1.3885600000",
-                "auto_update": "false",
-                "location": "left",
-                "token": "$",
-                "decimal_token": ".",
-                "thousands_token": ",",
-                "decimal_places": 2
-              }
-            },
-            "description": ""
           }
         ],
-        "tags": ["/currencies"]
+        "tags": [
+          "/currencies"
+        ],
+        "operationId": "createCurrency"
       }
     },
     "/currencies/{id}": {
@@ -249,7 +241,9 @@
         },
         "summary": "Get a Currency",
         "description": "Returns a single *Currency*.",
-        "tags": ["/currencies"],
+        "tags": [
+          "/currencies"
+        ],
         "parameters": [
           {
             "name": "Content-Type",
@@ -561,7 +555,9 @@
             }
           }
         ],
-        "tags": ["/currencies"],
+        "tags": [
+          "/currencies"
+        ],
         "operationId": "updateACurrency"
       },
       "delete": {
@@ -576,7 +572,9 @@
         },
         "summary": "Delete a Currency",
         "description": "Deletes a *Currency*.",
-        "tags": ["/currencies"],
+        "tags": [
+          "/currencies"
+        ],
         "parameters": [
           {
             "name": "Accept",
@@ -734,8 +732,8 @@
   },
   "tags": [
     {
-      "name": "/currencies", 
-      "description":""
+      "name": "/currencies",
+      "description": ""
     }
   ],
   "securityDefinitions": {

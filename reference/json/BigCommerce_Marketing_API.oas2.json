@@ -3,7 +3,12 @@
   "info": {
     "version": "",
     "title": "Marketing",
-    "description": "Marketing APIs support demand generation and loyalty programs. They include Coupons, Banners, and Gift Certificates.\n\n### Coupons\nCategory or product discounts that can be applied to orders for customers who enter a given code.\n\n### Banners\nBanners available to display on a store.\n\n### Gift Certificates\nGift certificates available to offer to a store’s customers."
+    "description": "Marketing APIs support demand generation and loyalty programs. They include Coupons, Banners, and Gift Certificates.\n\n### Coupons\nCategory or product discounts that can be applied to orders for customers who enter a given code.\n\n### Banners\nBanners available to display on a store.\n\n### Gift Certificates\nGift certificates available to offer to a store’s customers.",
+    "contact": {
+      "email": "devdocs@bigcommerce.com",
+      "url": "https://developer.bigcommerce.com",
+      "name": "BigCommerce"
+    }
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v2",
@@ -829,7 +834,8 @@
         },
         "tags": [
           "Coupons"
-        ]
+        ],
+        "operationId": "createCoupon"
       },
       "delete": {
         "description": "By default, it deletes all *Coupons*.",

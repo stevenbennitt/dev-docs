@@ -3,7 +3,12 @@
   "info": {
     "version": "0.0.1",
     "title": "Returns API (Beta)",
-    "description": "Returns API for BigCommerce (Beta)"
+    "description": "Returns API for BigCommerce (Beta)",
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com",
+      "name": "BigCommerce"
+    }
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v3",
@@ -197,7 +202,11 @@
             "in": "query",
             "name": "status",
             "type": "string",
-            "enum": ["CLOSED", "OPEN", "REMOVED"],
+            "enum": [
+              "CLOSED",
+              "OPEN",
+              "REMOVED"
+            ],
             "format": "int64"
           },
           {
@@ -426,7 +435,9 @@
     },
     "CreateReturnRequest": {
       "type": "object",
-      "required": ["items"],
+      "required": [
+        "items"
+      ],
       "properties": {
         "items": {
           "description": "A collection of items to be returned",
@@ -618,7 +629,11 @@
     },
     "Status": {
       "type": "string",
-      "enum": ["CLOSED", "OPEN", "REMOVED"],
+      "enum": [
+        "CLOSED",
+        "OPEN",
+        "REMOVED"
+      ],
       "description": "The status of the return"
     },
     "UpdateReturnStatusesRequest": {
@@ -873,7 +888,9 @@
         "type": {
           "type": "string",
           "description": "The reference type",
-          "enum": ["ORDER_PRODUCT"]
+          "enum": [
+            "ORDER_PRODUCT"
+          ]
         },
         "value": {
           "type": "string",

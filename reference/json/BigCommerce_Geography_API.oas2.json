@@ -3,7 +3,12 @@
   "info": {
     "version": "",
     "title": "Geography API",
-    "description": "### Geography\nGeography APIs handle geographic information resources. They include Countries and States.\n\n### Country\nA country or territory, identifiable by an ISO 3166 country code.\n\n### State\nA state or province, identifiable by an [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-2) subdivision code."
+    "description": "### Geography\nGeography APIs handle geographic information resources. They include Countries and States.\n\n### Country\nA country or territory, identifiable by an ISO 3166 country code.\n\n### State\nA state or province, identifiable by an [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-2) subdivision code.",
+    "contact": {
+      "name": "BigCommerce",
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com"
+    }
   },
   "host": "api.bigcommerce.com",
   "basePath": "/stores/{store_hash}/v2",
@@ -645,7 +650,8 @@
         },
         "tags": [
           "Countries"
-        ]
+        ],
+        "operationId": "getCountriesList"
       }
     },
     "/countries/{id}": {
@@ -757,7 +763,8 @@
         },
         "tags": [
           "Countries"
-        ]
+        ],
+        "operationId": "getCountry"
       },
       "parameters": [
         {
@@ -930,7 +937,8 @@
         },
         "tags": [
           "States"
-        ]
+        ],
+        "operationId": "getStatesList"
       },
       "parameters": [
         {
@@ -1038,7 +1046,8 @@
         },
         "tags": [
           "States"
-        ]
+        ],
+        "operationId": "getState"
       },
       "parameters": [
         {

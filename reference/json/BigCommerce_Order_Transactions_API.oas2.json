@@ -7,6 +7,11 @@
     "termsOfService": "",
     "license": {
       "name": ""
+    },
+    "contact": {
+      "email": "devdocs@bigcommerce.com",
+      "url": "https://developer.bigcommerce.com",
+      "name": "BigCommerce"
     }
   },
   "host": "api.bigcommerce.com",
@@ -49,6 +54,7 @@
             "schema": {
               "type": "object",
               "description": "Response payload for the BigCommerce Order Transactions API.",
+              "title": "Transaction Collection Response",
               "properties": {
                 "data": {
                   "type": "array",
@@ -56,7 +62,6 @@
                     "description": "A BigCommerce Transaction object describes a single transaction.",
                     "allOf": [
                       {
-                        "type": "object",
                         "title": "Transaction Base",
                         "properties": {
                           "event": {
@@ -165,24 +170,24 @@
                           "offline": {
                             "type": "object",
                             "description": "Offline payment (e.g., check or purchase order).",
+                            "title": "Offline",
                             "properties": {
                               "display_name": {
                                 "description": "Display name for the offline payment.\n",
                                 "type": "string"
                               }
-                            },
-                            "title": "Offline"
+                            }
                           },
                           "custom": {
                             "type": "object",
                             "description": "Custom payment from manual order.",
+                            "title": "Custom",
                             "properties": {
                               "payment_method": {
                                 "description": "Text entered for the payment method in the control panel.\n",
                                 "type": "string"
                               }
-                            },
-                            "title": "Custom"
+                            }
                           },
                           "": {
                             "type": "string"
@@ -218,6 +223,7 @@
                           "avs_result": {
                             "description": "Address Verification Service (AVS) result from the payment gateway.",
                             "type": "object",
+                            "title": "AVS Results",
                             "properties": {
                               "code": {
                                 "description": "AVS code.",
@@ -235,12 +241,12 @@
                                 "description": "AVS Code for postal matching result.",
                                 "type": "string"
                               }
-                            },
-                            "title": "AVS Results"
+                            }
                           },
                           "cvv_result": {
                             "description": "Card Verification Value result from the payment gateway.",
                             "type": "object",
+                            "title": "CVV Result",
                             "properties": {
                               "code": {
                                 "description": "CVV code.",
@@ -250,12 +256,12 @@
                                 "description": "CVV message.",
                                 "type": "string"
                               }
-                            },
-                            "title": "CVV Result"
+                            }
                           },
                           "credit_card": {
                             "type": "object",
                             "description": "A credit-card model.",
+                            "title": "Credit Card",
                             "properties": {
                               "card_type": {
                                 "description": "The credit-card type: Visa, MasterCard, etc.\n",
@@ -279,8 +285,7 @@
                                 "description": "The expiry year of a credit-card.\n",
                                 "type": "integer"
                               }
-                            },
-                            "title": "Credit Card"
+                            }
                           },
                           "gift_certificate": {
                             "type": "object",
@@ -342,6 +347,7 @@
                 "meta": {
                   "type": "object",
                   "description": "Data about the response, including pagination and collection totals.",
+                  "title": "Collection Meta",
                   "properties": {
                     "pagination": {
                       "type": "object",
@@ -394,11 +400,9 @@
                         }
                       }
                     }
-                  },
-                  "title": "Collection Meta"
+                  }
                 }
-              },
-              "title": "Transaction Collection Response"
+              }
             },
             "examples": {
               "Square Payment Gateway": {

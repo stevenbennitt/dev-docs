@@ -7,6 +7,11 @@
     "termsOfService": "",
     "license": {
       "name": ""
+    },
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com",
+      "name": "BigCommerce"
     }
   },
   "host": "api.bigcommerce.com",
