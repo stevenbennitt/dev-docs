@@ -41844,7 +41844,8 @@
       "required": [
         "parent_id",
         "name"
-      ]
+      ],
+      "x-examples": {}
     },
     "BrandBase": {
       "type": "object",
