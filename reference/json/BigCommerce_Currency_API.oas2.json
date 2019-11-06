@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "",
-    "title": "Currencies",
+    "title": "Currencies API",
     "description": "### Currencies\n`/currencies` endpoints manage alternate currency display options on the storefront.\n\n**OAuth Scopes**\n* `Information & Settings`",
     "contact": {
       "url": "https://developer.bigcommerce.com",
