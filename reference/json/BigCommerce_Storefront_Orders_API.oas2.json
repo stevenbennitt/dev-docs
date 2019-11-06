@@ -4,7 +4,12 @@
     "version": "",
     "title": "Storefront Orders API",
     "description": "## Storefront Orders API\nReturns order data immediately after an order is placed on the storefront.",
-    "termsOfService": "https://www.bigcommerce.com/terms/api-terms/"
+    "termsOfService": "https://www.bigcommerce.com/terms/api-terms/",
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com",
+      "name": "BigCommerce"
+    }
   },
   "host": "<store_url>",
   "basePath": "/api/storefront",

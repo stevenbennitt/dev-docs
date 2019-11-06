@@ -4,7 +4,12 @@
     "title": "Storefront  API Token  (Beta)",
     "version": "1.0",
     "description": "An OpenAPI Document for Storefront API Token generation via Bigcommerce v3 API. \n **Note:** these endpoints are currently in **`beta`**.\n \n **OAuth Scopes**\n* `Manage` `Storefront API Tokens`\n* `Manage` `Storefront API Customer Impersonation Tokens`",
-    "termsOfService": "http://www.bigcommerce.com/terms"
+    "termsOfService": "http://www.bigcommerce.com/terms",
+    "contact": {
+      "url": "https://developer.bigcommerce.com",
+      "email": "devdocs@bigcommerce.com",
+      "name": "BigCommerce"
+    }
   },
   "tags": [],
   "servers": [
