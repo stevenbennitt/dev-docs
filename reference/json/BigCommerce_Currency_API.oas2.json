@@ -89,9 +89,6 @@
         },
         "summary": "Get All Store Currencies",
         "description": "Returns a list of all store *Currency*.",
-        "tags": [
-          "/currencies"
-        ],
         "produces": [
           "application/json"
         ],
@@ -111,7 +108,10 @@
             "required": true
           }
         ],
-        "operationId": "getAllStoreCurrencies"
+        "operationId": "getAllStoreCurrencies",
+        "tags": [
+          "/currencies"
+        ]
       },
       "delete": {
         "responses": {
@@ -241,9 +241,6 @@
         },
         "summary": "Get a Currency",
         "description": "Returns a single *Currency*.",
-        "tags": [
-          "/currencies"
-        ],
         "parameters": [
           {
             "name": "Content-Type",
@@ -260,7 +257,10 @@
             "required": true
           }
         ],
-        "operationId": "getACurrency"
+        "operationId": "getACurrency",
+        "tags": [
+          "/currencies"
+        ]
       },
       "parameters": [
         {
