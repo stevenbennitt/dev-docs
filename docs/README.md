@@ -25,7 +25,7 @@ Store Design: Widget Settings display different content on the same level of hei
 
 ## Anatomy
 
-![Tabs_Anatomy](../assets/images/Tabs_Anatomy.png "Tabs_Anatomy")
+![Tabs_Anatomy](https://raw.githubusercontent.com/stevenbennitt/dev-docs/9489e240fdba8da55199c8512a4af922f2fcbe58/assets/images/Tabs_Anatomy.png "Tabs_Anatomy")
 1. `Tab / in-focus`
 This is the selected state.
 
